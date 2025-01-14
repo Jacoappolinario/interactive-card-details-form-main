@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <section class="card-preview-section" aria-label="Card Preview">
+      <figure class="card-front">
+        <h1 class="card-number">0000 0000 0000 0000</h1>
+        <figcaption class="card-details">
+          <p class="cardholder-name">JANE APPLESEED</p>
+          <p class="expiry-date">00/00</p>
+        </figcaption>
+      </figure>
+      <figure class="card-back">
+        <figcaption class="cvc-display">000</figcaption>
+      </figure>
+    </section>
+
+    <section class="form-section" arial-label="Card Datails Form">
+      <form class="card-form">
+        <div class="form-group">
+          <label class="form-label" for="cardholderName">Cardholder Name</label>
+          <input class="form-input" type="text" name="cardholderName" id="cardholderName" placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cardNumber">Card Number</label>
+          <input class="form-input" type="text" name="cardNumber" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="form-row">
+          <div class="form-group expiry-group">
+            <label class="form-label">Exp. Date (MM/YY)</label>
+            <div class="expiry-inputs">
+              <input class="form-input expiry-input" type="number" name="expMonth" id="expMonth" placeholder="MM">
+              <input class="form-input expiry-input" type="number" name="expYear" id="expYear" placeholder="YY">
+            </div>
+          </div>
+          <div class="form-group cvc-group">
+            <label class="form-label" for="cvc">CVC</label>
+            <input class="form-input cvc-input" type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
