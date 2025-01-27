@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Space Grotesk", serif;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+p,
+figure {
+  margin: 0px;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.card-preview-section {
+  padding: 11.688rem 0.938rem 11.625rem 10.25rem;
+  background-image: url("../images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.card-wrapper {
+  width: 33.813rem;
+  height: 32.938rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.313rem;
+}
+
+.card-front {
+  width: 27.938rem;
+  height: 15.313rem;
+  padding: 8.688rem 2rem 1.656rem 2rem;
+  background-image: url("../images/card-logo.svg"),
+    url("../images/bg-card-front.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 2rem top 1.75rem, center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.594rem;
+  align-self: flex-start;
+}
+
+.card-number {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.214rem;
+  color: #ffffff;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardholder-name,
+.expiry-date,
+.cvc-display {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  color: #ffffff;
+}
+
+.card-back {
+  width: 27.938rem;
+  height: 15.313rem;
+  padding: 6.938rem 3.563rem 7.25rem 21.125rem;
+  background-image: url("../images/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: flex-end;
+}
+
+.cvc-display {
+  text-align: end;
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  margin-left: 7rem;
+}
+
+.card-form {
+  width: 23.813rem;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.563rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  color: #21092f;
+}
+
+.form-input {
+  width: 100%;
+  height: 2.813rem;
+  padding: 0.688rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.063rem solid #dfdee0;
+}
+
+.form-input::placeholder,
+.form-input.expiry-input::placeholder {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #21092f;
+  opacity: 0.25;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiry-inputs {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.expiry-input {
+  width: 5rem;
+}
+
+.cvc-input {
+  width: 11.938rem;
+}
+
+.submit-button {
+  padding: 0.938rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  background-color: #21092f;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* TODO: Adicionar as funcionalidades da tela "Desktop Active" do Figma. */

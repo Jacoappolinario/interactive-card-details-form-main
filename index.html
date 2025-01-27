@@ -7,21 +7,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="page-container">
     <section class="card-preview-section" aria-label="Card Preview">
-      <figure class="card-front">
-        <h1 class="card-number">0000 0000 0000 0000</h1>
-        <figcaption class="card-details">
-          <p class="cardholder-name">JANE APPLESEED</p>
-          <p class="expiry-date">00/00</p>
-        </figcaption>
-      </figure>
-      <figure class="card-back">
-        <figcaption class="cvc-display">000</figcaption>
-      </figure>
+      <div class="card-wrapper">
+        <figure class="card-front">
+          <h1 class="card-number">0000 0000 0000 0000</h1>
+          <figcaption class="card-details">
+            <p class="cardholder-name">JANE APPLESEED</p>
+            <p class="expiry-date">00/00</p>
+          </figcaption>
+        </figure>
+        <figure class="card-back">
+          <figcaption class="cvc-display">000</figcaption>
+        </figure>
+      </div>
+
     </section>
 
     <section class="form-section" arial-label="Card Datails Form">
