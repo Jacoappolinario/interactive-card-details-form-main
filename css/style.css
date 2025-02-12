@@ -138,6 +138,9 @@ a {
   background-color: #ffffff;
   outline: none;
   transition: border 0.3s ease;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #21092f;
 }
 
 .form-input:focus {
@@ -155,9 +158,6 @@ a {
 
 .form-input::placeholder,
 .form-input.expiry-input::placeholder {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #21092f;
   opacity: 0.25;
 }
 
